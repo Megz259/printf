@@ -11,7 +11,8 @@
  * Return: number of chars printed
  */
 
-int print_int(va_list types, char buffer[], int flags, int width, int precision, int size)
+int print_int(va_list types, char buffer[],
+		int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
 	int is_negative = 0;
@@ -42,4 +43,3 @@ int print_int(va_list types, char buffer[], int flags, int width, int precision,
 
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
-
