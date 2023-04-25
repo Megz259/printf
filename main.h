@@ -43,7 +43,7 @@ typedef struct fmt fmt_t;
 /*Functions - print numbers*/
 int print_int(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
-int print_unsigned(va_list types, char buffer[]
+int print_unsigned(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
@@ -74,7 +74,7 @@ int print_percent(va_list types, char buffer[],
 
 /*Function - printing non-printable characters*/
 int print_non_printable(va_list types, char buffer[],
-		int flags, int width, int precision, int size)
+		int flags, int width, int precision, int size);
 
 /*Functions - width handlers*/
 int handle_write_char(char c, char buffer[],
